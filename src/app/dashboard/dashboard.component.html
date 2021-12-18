@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <ul>
+      <li *ngFor="let route of routes" (click)="navigateTo(route.path)">{{route.viewValue}}</li>
+    </ul>
+  </div>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
