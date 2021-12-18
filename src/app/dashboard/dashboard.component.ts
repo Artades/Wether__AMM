@@ -9,19 +9,20 @@ import {Router} from "@angular/router";
 export class DashboardComponent implements OnInit {
   public routes = [
     {
+      path: 'weather',
+      viewValue: 'Weather',
+    },
+    {
       path: 'cards',
       viewValue: 'Cards',
-      img: ''
     },
     {
       path: 'schedule',
       viewValue: 'Schedule',
-      img: ''
     },
     {
       path: 'table',
       viewValue: 'Table',
-      img: ''
     },
 
   ]
