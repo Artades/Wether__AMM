@@ -10,7 +10,7 @@ export class WeatherHttpService {
   constructor(private http:  HttpClient) { }
 
   public getData(): Observable<any>{
-    return this.http.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    return this.http.get('http://api.openweathermap.org/data/2.5/weather?q=Almaty&appid=0dcafe22fe933fd290f3fa7837e18726')
   }
 
 }

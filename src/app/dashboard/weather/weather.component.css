@@ -1,0 +1,40 @@
+.city{
+  width: 40%;
+  border-radius: 8px;
+  box-shadow: 0 0 6px lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.line{
+  height: 1px;
+  width: 90%;
+  background: lightgrey;
+  margin: 15px 0;
+}
+.city-name p{
+  font-size: 3rem;
+  color: green;
+}
+.city-temp p{
+  font-size: 2rem;
+}
+.city-weather{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.input{
+  width: 50%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column
+}
+input{
+  width: 100%;
+  padding: 15px 18px;
+  border-radius: 8px;
+}
+button{
+  align-self: center;
+}

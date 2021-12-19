@@ -1,1 +1,32 @@
-<p>weather works!</p>
+<main>
+  <div class="container">
+
+    <div class="input">
+      <input type="text"  placeholder="Введите город, чтоб узнать текущую погоду" [value] = 'search'>
+      <button  >Search</button>
+    </div>
+
+    <div *ngFor="let item of dataWeather" class="wrapper weather city">
+      <div class="city-name">
+        <p>
+          <strong>
+            {{item.name}}
+          </strong>,
+          {{item.sys.country}}
+        </p>
+      </div>
+      <div class="line"></div>
+      <div class="city-temp">
+        <p> {{temp}} &deg;C</p>
+      </div>
+      <div class="city-weather">
+        <p>{{item.weather[0].description}}</p>
+      </div>
+      <div class="line"></div>
+      <div>
+        <img src="https://openweathermap.org/img/wn/{{item.weather[0].icon}}@2x.png" alt="">
+      </div>
+<!--      END -->
+    </div>
+  </div>
+</main>

@@ -15,7 +15,7 @@
   width: 250px;
   border-right: 1px solid brown;
   height: 100%;
-  position: fixed;g
+  position: fixed;
 }
 .left_sidebar ul li{
   list-style: none;
@@ -28,6 +28,9 @@
   border-radius: 8px;
   box-shadow: 0 0 5px darkred;
   color: white;
+}
+.left_sidebar img{
+  width: 100%;
 }
 .left_sidebar ul li:hover{
   background: darkred;

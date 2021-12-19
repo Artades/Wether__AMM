@@ -2,6 +2,9 @@
 <div class="app">
   <div class="container">
     <div class="left_sidebar">
+      <h3>
+        <img [src]="imageLogo" alt="openWeather">
+      </h3>
       <ul>
         <li *ngFor="let route of routes" (click)="navigateTo(route.path)">{{route.viewValue}}</li>
       </ul>
