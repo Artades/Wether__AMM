@@ -9,11 +9,12 @@ import {WeatherHttpService} from "./weather-http.service";
 export class WeatherComponent implements OnInit {
   public search:string = ''
 
-  public dataWeather:any[] = [];
+  public dataWeather!:any[];
   public temp: number = 0;
   constructor(private service: WeatherHttpService) { }
   ngOnInit(): void {
     this.service.getData('Astana').subscribe( res =>{
+     this.dataWeather = []
       this.dataWeather.push(res);
       this.temp = Math.round(res.main.temp - 273)
       console.log(this.dataWeather);
