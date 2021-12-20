@@ -11,11 +11,11 @@ export class DashboardComponent implements OnInit {
   public routes = [
     {
       path: 'weather',
-      viewValue: 'Weather',
+      viewValue: 'Погода',
     },
     {
       path: 'cards',
-      viewValue: 'Cards',
+      viewValue: 'Погода cегодня',
     },
     {
       path: 'schedule',

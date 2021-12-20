@@ -13,18 +13,20 @@ export class WeatherComponent implements OnInit {
   public temp: number = 0;
   constructor(private service: WeatherHttpService) { }
   ngOnInit(): void {
-    this.service.getData().subscribe( res =>{
+    this.service.getData('Astana').subscribe( res =>{
       this.dataWeather.push(res);
       this.temp = Math.round(res.main.temp - 273)
       console.log(this.dataWeather);
     })
   }
-  // public searchData(){
-  //   this.service.getData().subscribe( res =>{
-  //     this.dataWeather.push(res);
-  //     this.temp = Math.round(res.main.temp - 273)
-  //     console.log(this.dataWeather);
-  //   })
-  // }
+  public searchData(){
+    this.service.getData(this.search).subscribe( res =>{
+      this.dataWeather = []
+      this.temp = 0
+      this.dataWeather.push(res);
+      this.temp = Math.round(res.main.temp - 273)
+      console.log(this.dataWeather);
+    })
+  }
 
 }

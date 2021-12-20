@@ -1,9 +1,13 @@
 <main>
   <div class="container">
-
-    <div class="input">
-      <input type="text"  placeholder="Введите город, чтоб узнать текущую погоду" [value] = 'search'>
-      <button  >Search</button>
+    <div class="input-group mb-3">
+      <input [(ngModel)]="search" type="text" class="form-control"
+             placeholder="Введите город" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary"
+        (click)="searchData()"
+        >Поиск</button>
+      </div>
     </div>
 
     <div *ngFor="let item of dataWeather" class="wrapper weather city">
@@ -26,7 +30,19 @@
       <div>
         <img src="https://openweathermap.org/img/wn/{{item.weather[0].icon}}@2x.png" alt="">
       </div>
-<!--      END -->
+      <div>
+       <strong>Скорость ветра:</strong> {{item.wind.speed}} км/ч
+      </div>
+      <div>
+        <strong>Давление: </strong>{{item.main.pressure}} гПа
+      </div>
+    </div>
+
+    <div class="info-text">
+      <span>Погода в:</span>  {{dataWeather[0].name}}.<br>
+      <span>Видимость:</span>  {{dataWeather[0].visibility /1000}} км. <br>
+      <span>Ветер умеренный:</span>  ({{dataWeather[0].wind.speed}} км/ч ).<br>
+      <span>Относительная влажность:</span>  {{(dataWeather[0].main.humidity - 8)}} - {{dataWeather[0].main.humidity + 2}}%.
     </div>
   </div>
 </main>

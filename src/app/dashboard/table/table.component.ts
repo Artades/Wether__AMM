@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import{ TableHttpService} from "./table-http.service";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-table',
