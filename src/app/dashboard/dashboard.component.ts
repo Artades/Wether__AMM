@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
     },
     {
       path: 'schedule',
-      viewValue: 'Schedule',
+      viewValue: 'Интересные факты',
     },
     {
       path: 'table',

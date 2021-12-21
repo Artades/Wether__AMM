@@ -1,1 +1,78 @@
-<p>schedule works!</p>
+<
+<main>
+  <div class="welcome">
+  <h1 class ="welcome-title">
+    <strong>Погода</strong> - состояние атмосферы в данной местности или над обширным пространством, влияющее на человеческую деятельность.
+    На этой странице мы хотим показать и рассказать вам о интересных фактах о погоде и климате в мире.
+    Данную информацию взята как из открытых источников, так и из закрытых  и предствавлена  ввиде графиков.Информация по сей день является актуальной.
+  </h1>
+    <img  class="welcome-image" src="./assets/schedule-assets/rain.png" alt="weather_png">
+  </div>
+<!--  ///-->
+<div class="charts">
+  <div class="chart">
+    <p class="chart-title">ТОП 7 стран по количеству осадков (мм)</p>
+<ngx-charts-number-card
+  [view]="[1200,200]"
+  [results]="single">
+</ngx-charts-number-card>
+
+  </div>
+  <div class="chart">
+    <p class="chart-title">ТОП самых низких зафиксированных температур</p>
+    <ngx-charts-bar-vertical
+      [view]="[1200, 200]"
+
+      [results]="single2"
+      [gradient]="gradient"
+      [xAxis]=""
+      [yAxis]=""
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel">
+
+    </ngx-charts-bar-vertical>
+  </div>
+<!--  ///-->
+  <div class="chart">
+    <p class="chart-title">ТОП самых высоких зафиксированных температур</p>
+    <ngx-charts-bar-vertical
+      [view]="[1200, 200]"
+      [results]="single3"
+      [gradient]="gradient"
+      [xAxis]=""
+      [yAxis]=""
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel">
+    </ngx-charts-bar-vertical>
+    </div>
+<!--  ///-->
+  <div class="welcome column">
+    <h1 class ="welcome-title-earth">
+      <strong>Климат</strong> - это совокупность погодных (атмосферных) условий за многолетний период, которые характерны для данной местности. Это более устойчивая характеристика погоды.
+      Также на нашей планете имеются климатические пояса.Всего этих поясов ученые выделяют 7.Более подробно вы можете посмотреть ниже, на рисунке.
+    </h1>
+    <img  class="welcome-image-earth" src="./assets/schedule-assets/earth.jpg" alt="weather_png">
+  </div>
+  <div class="chart">
+    <p class="chart-title">Отношения поясов в %:</p>
+    <ngx-charts-pie-chart
+      [view]="[1000,1000]"
+
+      [results]="single4"
+      [gradient]="gradient"
+      [legend]="showLegend"
+
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+
+    >
+    </ngx-charts-pie-chart>
+  </div>
+</div>
+</main>
