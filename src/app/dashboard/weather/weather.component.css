@@ -1,3 +1,6 @@
+.container{
+  max-width: 1440px;
+}
 .city{
   width: 100%;
   height: 100%;
@@ -15,7 +18,7 @@
   margin: 15px 0;
 }
 .city-name p{
-  font-size: 3rem;
+  font-size: 2rem;
   color: green;
 }
 .city-temp p{

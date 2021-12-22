@@ -10,12 +10,16 @@ export class DashboardComponent implements OnInit {
   public imageLogo: string = 'https://upload.wikimedia.org/wikipedia/commons/f/f6/OpenWeather-Logo.jpg'
   public routes = [
     {
+      path: 'home',
+      viewValue: 'Home',
+    },
+    {
       path: 'weather',
       viewValue: 'Погода',
     },
     {
       path: 'cards',
-      viewValue: 'Погода cегодня',
+      viewValue: 'Подробнее',
     },
     {
       path: 'schedule',
