@@ -9,7 +9,6 @@
 .container{
   max-width: 1440px;
   padding: 0 15px;
-  position: relative;
 }
 .left_sidebar{
   padding: 1em;
@@ -40,10 +39,8 @@
   color: black;
 }
 .right_sidebar{
-  position: absolute;
-  left: 550px;
+  margin-left: 250px;
   padding: 15px;
-  width: 70%;
 }
 
 
