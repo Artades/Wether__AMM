@@ -18,6 +18,9 @@
   height: 100%;
   position: fixed;
 }
+.left_sidebar ul li:first-child{
+  background: orangered;
+}
 .left_sidebar ul li{
   list-style: none;
   cursor: pointer;
@@ -40,7 +43,7 @@
 }
 .right_sidebar{
   margin-left: 250px;
-  padding: 15px;
+  padding: 50px 15px;
 }
 
 
