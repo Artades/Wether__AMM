@@ -6,10 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-
 }
-
 main {
   font-family: Roboto, sans-serif;
   max-width: 1400px;
@@ -25,8 +22,8 @@ main {
 .welcome-title{
   font-weight: 400;
   width: 70%;
-  font-size: 30px;
-  text-align: justify-all;
+  font-size: 24px;
+  text-align: center;
   line-height: 50px;
 }
 .welcome-image{
