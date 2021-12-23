@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
   public routes = [
     {
       path: 'home',
-      viewValue: 'Home',
+      viewValue: 'Главная',
     },
     {
       path: 'weather',

@@ -2,46 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-
-}
-
 main {
   font-family: Roboto, sans-serif;
-  max-width: 1400px;
 }
 .welcome{
-  width: 100%;
-  padding: 2em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 .welcome-title{
   font-weight: 400;
-  width: 70%;
-  font-size: 30px;
-  text-align: justify-all;
-  line-height: 50px;
+  font-size: 20px;
+  text-align: justify;
+  padding-right:20px;
+
 }
 .welcome-image{
   width: 320px;
   height: 300px;
 }
 .chart{
-  padding: 2em;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .chart-title{
   margin-bottom: 1em;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -49,11 +36,11 @@ main {
   flex-direction: column;
 }
 .welcome-image-earth{
-  width: 1000px;
   height: 700px;
   border-radius: 2em;
+  margin-bottom: 40px;
 }
 .welcome-title-earth{
-  padding: 2em;
-  width: 100%;
+  text-align: justify;
+  margin: 40px 0;
 }
