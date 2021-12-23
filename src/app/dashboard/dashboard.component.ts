@@ -26,9 +26,9 @@ export class DashboardComponent implements OnInit {
       viewValue: 'Интересные факты',
     },
     {
-      path: 'table',
-      viewValue: 'Table',
-    },
+      path: 'about_us',
+      viewValue: 'О нас'
+    }
 
   ]
   constructor(private router: Router) {
